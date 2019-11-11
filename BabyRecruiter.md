@@ -16,4 +16,4 @@ In the challenge page we will send the payload.
 
 On the server let's open an http server on port 53.
 
-[image]
+![](https://github.com/andersongomes001/ctf_scripts/blob/master/Captura%20de%20tela%20de%202019-11-11%2010-42-54.png?raw=true)
