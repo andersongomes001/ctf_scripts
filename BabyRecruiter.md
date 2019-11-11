@@ -12,7 +12,7 @@ Input and output on port 53 is enabled, we can approve of this rule.
 
 In the challenge page we will send the payload.
 
-[image]
+![](https://github.com/andersongomes001/ctf_scripts/blob/master/FireShot%20Capture%20022%20-%20Resume%20-%2038.240.15.141.png?raw=true)
 
 On the server let's open an http server on port 53.
 
